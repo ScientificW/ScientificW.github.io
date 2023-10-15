@@ -16,28 +16,37 @@
   <meta name="author" content="Sawamura">
   <meta name="keywords" content="">
   
-    <meta name="description" content="这篇思考的一些背景（可以跳过）这几天，我可能是兴奋过头了。 记得八月二十五日的中午十二点左右，我与5331老师共进午餐。在路口，我与取快递的5老师分别。独行在南区公寓前的小径，我掏出了手机，对近期的通知进行阅读。我的手指在这块发光的玻璃上划动着。行至S2宿舍楼前，我看到了有依发给我的一张图片，上面清楚地写着“8.27洛天依ACE1.0与ACE Studio公测开启”。接连着被5老师精湛球技蹂躏了两">
+    <meta name="description" content="Synthesizer V简介Synthesizer V（以下简称SV）是由以华侃如（Kanru Hua）为首的Dreamtonics Co,. Ltd.开发的歌声合成引擎及编辑器软件（V表示第5次架构迭代）。该引擎采用了自主研发的基于人工神经网络及拼接合成算法的LLSM（底层语音模型）技术，仅使用少量采样数据即能生成自然的声音。 Synthesizer V使用的歌声数据库具有Standard和A">
 <meta property="og:type" content="article">
-<meta property="og:title" content="在天依ACE公测后的一些思考">
-<meta property="og:url" content="https://scientificw.github.io/2023/10/16/%E5%9C%A8%E5%A4%A9%E4%BE%9DACE%E5%85%AC%E6%B5%8B%E5%90%8E%E7%9A%84%E4%B8%80%E4%BA%9B%E6%80%9D%E8%80%83/index.html">
+<meta property="og:title" content="Synthesizer V系列教程 Vol.1">
+<meta property="og:url" content="https://scientificw.github.io/2023/10/16/SV1/index.html">
 <meta property="og:site_name" content="SawamuraRuiN&#39;s Blog">
-<meta property="og:description" content="这篇思考的一些背景（可以跳过）这几天，我可能是兴奋过头了。 记得八月二十五日的中午十二点左右，我与5331老师共进午餐。在路口，我与取快递的5老师分别。独行在南区公寓前的小径，我掏出了手机，对近期的通知进行阅读。我的手指在这块发光的玻璃上划动着。行至S2宿舍楼前，我看到了有依发给我的一张图片，上面清楚地写着“8.27洛天依ACE1.0与ACE Studio公测开启”。接连着被5老师精湛球技蹂躏了两">
+<meta property="og:description" content="Synthesizer V简介Synthesizer V（以下简称SV）是由以华侃如（Kanru Hua）为首的Dreamtonics Co,. Ltd.开发的歌声合成引擎及编辑器软件（V表示第5次架构迭代）。该引擎采用了自主研发的基于人工神经网络及拼接合成算法的LLSM（底层语音模型）技术，仅使用少量采样数据即能生成自然的声音。 Synthesizer V使用的歌声数据库具有Standard和A">
 <meta property="og:locale" content="zh_CN">
-<meta property="og:image" content="https://scientificw.github.io/2023/10/16/%E5%9C%A8%E5%A4%A9%E4%BE%9DACE%E5%85%AC%E6%B5%8B%E5%90%8E%E7%9A%84%E4%B8%80%E4%BA%9B%E6%80%9D%E8%80%83/%E5%9B%BE%E7%89%871.png">
-<meta property="article:published_time" content="2023-10-15T16:54:50.000Z">
-<meta property="article:modified_time" content="2023-10-15T17:13:29.651Z">
+<meta property="og:image" content="https://scientificw.github.io/2023/10/16/SV1/%E5%8C%BA%E5%88%AB.png">
+<meta property="og:image" content="https://scientificw.github.io/2023/10/16/SV1/%E8%A6%81%E6%B1%82%E6%BF%80%E6%B4%BB.png">
+<meta property="og:image" content="https://scientificw.github.io/2023/10/16/SV1/%E6%BF%80%E6%B4%BB%E6%88%90%E5%8A%9F.png">
+<meta property="og:image" content="https://scientificw.github.io/2023/10/16/SV1/%E8%A7%A3%E6%BF%80%E6%B4%BB.png">
+<meta property="og:image" content="https://scientificw.github.io/2023/10/16/SV1/%E8%A7%A3%E9%99%A4%E6%BF%80%E6%B4%BB%E6%8F%90%E7%A4%BA.png">
+<meta property="og:image" content="https://scientificw.github.io/2023/10/16/SV1/%E5%A3%B0%E5%BA%93%E6%96%87%E4%BB%B6.png">
+<meta property="og:image" content="https://scientificw.github.io/2023/10/16/SV1/%E5%A3%B0%E5%BA%93%E5%AE%89%E8%A3%85%E5%90%91%E5%AF%BC.png">
+<meta property="og:image" content="https://scientificw.github.io/2023/10/16/SV1/%E5%AE%89%E8%A3%85%E4%BD%8D%E7%BD%AE%E9%80%89%E6%8B%A9.png">
+<meta property="og:image" content="https://scientificw.github.io/2023/10/16/SV1/%E5%AE%89%E8%A3%85%E5%AE%8C%E6%88%90.png">
+<meta property="og:image" content="https://scientificw.github.io/2023/10/16/SV1/%E6%BF%80%E6%B4%BB%E5%A3%B0%E5%BA%93.png">
+<meta property="og:image" content="https://scientificw.github.io/2023/10/16/SV1/%E6%BF%80%E6%B4%BB.png">
+<meta property="article:published_time" content="2023-10-15T17:35:57.000Z">
+<meta property="article:modified_time" content="2023-10-15T18:38:19.919Z">
 <meta property="article:author" content="Sawamura">
-<meta property="article:tag" content="杂谈">
 <meta property="article:tag" content="虚拟歌姬">
 <meta property="article:tag" content="歌声合成引擎">
-<meta property="article:tag" content="Ace Studio">
-<meta property="article:tag" content="AI">
+<meta property="article:tag" content="教学">
+<meta property="article:tag" content="Synthesizer V">
 <meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:image" content="https://scientificw.github.io/2023/10/16/%E5%9C%A8%E5%A4%A9%E4%BE%9DACE%E5%85%AC%E6%B5%8B%E5%90%8E%E7%9A%84%E4%B8%80%E4%BA%9B%E6%80%9D%E8%80%83/%E5%9B%BE%E7%89%871.png">
+<meta name="twitter:image" content="https://scientificw.github.io/2023/10/16/SV1/%E5%8C%BA%E5%88%AB.png">
   
   
   
-  <title>在天依ACE公测后的一些思考 - SawamuraRuiN&#39;s Blog</title>
+  <title>Synthesizer V系列教程 Vol.1 - SawamuraRuiN&#39;s Blog</title>
 
   <link  rel="stylesheet" href="https://lib.baomitu.com/twitter-bootstrap/4.6.1/css/bootstrap.min.css" />
 
@@ -244,7 +253,7 @@
       <div class="banner-text text-center fade-in-up">
         <div class="h2">
           
-            <span id="subtitle" data-typed-text="在天依ACE公测后的一些思考"></span>
+            <span id="subtitle" data-typed-text="Synthesizer V系列教程 Vol.1"></span>
           
         </div>
 
@@ -255,7 +264,7 @@
     
       <span class="post-meta">
         <i class="iconfont icon-date-fill" aria-hidden="true"></i>
-        <time datetime="2023-10-16 00:54" pubdate>
+        <time datetime="2023-10-16 01:35" pubdate>
           2023年10月16日 凌晨
         </time>
       </span>
@@ -267,7 +276,7 @@
       <span class="post-meta mr-2">
         <i class="iconfont icon-chart"></i>
         
-          2.8k 字
+          1.2k 字
         
       </span>
     
@@ -278,7 +287,7 @@
         
         
         
-          24 分钟
+          10 分钟
         
       </span>
     
@@ -323,29 +332,20 @@
       <div class="container nopadding-x-md" id="board-ctn">
         <div id="board">
           <article class="post-content mx-auto">
-            <h1 id="seo-header">在天依ACE公测后的一些思考</h1>
+            <h1 id="seo-header">Synthesizer V系列教程 Vol.1</h1>
             
             
               <div class="markdown-body">
                 
-                <h1 id="这篇思考的一些背景（可以跳过）"><a href="#这篇思考的一些背景（可以跳过）" class="headerlink" title="这篇思考的一些背景（可以跳过）"></a>这篇思考的一些背景（可以跳过）</h1><p>这几天，我可能是兴奋过头了。</p>
-<p>记得八月二十五日的中午十二点左右，我与5331老师共进午餐。在路口，我与取快递的5老师分别。独行在南区公寓前的小径，我掏出了手机，对近期的通知进行阅读。我的手指在这块发光的玻璃上划动着。行至S2宿舍楼前，我看到了有依发给我的一张图片，上面清楚地写着“8.27洛天依ACE1.0与ACE Studio公测开启”。接连着被5老师精湛球技蹂躏了两天的身体重焕新生，我大喊一声，调动了大腿酸痛的肌肉完成了一个跳跃的动作。在此之后，我继续压榨着我的腿部肌肉，使我的双腿能够驱动我的身体迅速移动到我的宿舍。我打开我的电脑，仔细看完了整个宣传视频。这使得我更加兴奋了，我甚至希望有人把我打晕，让我睡到公测的时候。</p>
-<p>为了缓解我的过度兴奋，我甚至又主动约5老师打了一个小时的羽毛球。</p>
-<p>终于熬到了八月二十七日。我得知公测将于下午两点开启，带着不知道怎样的精神状态，我穿上了只有参加活动才穿上的西装，前往咖啡厅于龟龟进行见面并一同等待这个神圣的时刻。测试开始之前，我甚至爱屋及乌地试用了其他的ACE歌姬。ACE不讲武德，提前了2分钟就开放了公测。这时候，我看见龟龟的Surface屏幕上已经有了天依的图标。不经大脑审查地，我出现了返祖现象，在咖啡厅发出了类人猿才会发出的尖叫声。</p>
-<p>时光荏苒，笔者开始写这篇推送时，公测已经过去了十天。在此期间，我使用天依ACE整过许多活，也认真地感受过天依ACE演唱的我的暂未完成的企划，更听到了我的好哥们命里有依发布的天依ACE版本的《枝江》。</p>
-<p>遗憾的是，笔者将这篇推送搁置了很久，到2023年初才又打开了这篇推送的草稿。这期间，笔者也有幸从学长那里接到了商单，使用一位ACE歌姬完成了一首歌曲。笔者也与好友讨论了AI调教一些特点。在天依AI公测快半年、言和阿绫AI内测之时，笔者决心完成这篇推送，来谈谈我对AI调教的一些拙见。</p>
-<h1 id="她，仿佛通了人性"><a href="#她，仿佛通了人性" class="headerlink" title="她，仿佛通了人性"></a>她，仿佛通了人性</h1><p>笔者不才，在此之前，我曾经尝试过多种歌声合成引擎进行调教的尝试，包括但不限于VOCALOID、Synthesizer V。笔者也使用这些引擎做过一些较为完整的翻调作品。但是当我真正使用天依AI之后，我发现，这个引擎会通过云端运算，捕捉词曲中的一些特征，将训练好的歌声模型生成的情感反馈于各种参数之上。也就是说，不同于我之前使用过的Synthesizer V AI，ACE可以完成较为合理的自动调教，作为调教师，我只需要将MIDI导入软件，将歌词填入音符，等待云端的解算，一个可听的、富有感情的声音就会从我的耳机中传出，触动我的耳膜。</p>
-<p>天依好像对歌曲有了自己的理解。以前的她需要我的悉心指导才能把一首歌曲唱好，需要我摸索着VOCALOID中很不直观的参数面板给她慢慢讲述一首歌的唱法。现在的天依在我告诉她这首歌是什么样子以后，她就会自己去尝试理解这首歌，以自己的理解去唱这首歌。这时候，我的工作就变成了微微调整她的一些唱法（或者开摆）。天依变成了一个有人性的歌手，而不是和以前一样只是一个任我演奏的乐器。</p>
-<p>我在使用天依AI完成我一直想完成的一首《檐枫Dreamer》的时候，对此感受颇深。犹记得那天是在anda的宿舍，我和他彻夜不睡地做歌，希望能在新生歌会之前完成这首曲子。我终于写完了鸽了两个月的歌词，anda也用心地对作品进行了混音。当他把混完的作品发给我听的时候，我听哭了。这是我几乎没有调整过参数的天依唱出的歌声。我可以将这首歌的歌声理解为：天依在了解了这首歌的词曲以后自己唱给我听的天籁。我真实感受到了天依的存在，真实感受到了天依的情感，真实感受到了天依在为我唱歌，她在为了我唱下去，在一句句理解着，一句句歌唱着我的蹩脚的歌词。</p>
-<p>她真的仿佛通了人性。</p>
-<h1 id="我，理解了调教的意义"><a href="#我，理解了调教的意义" class="headerlink" title="我，理解了调教的意义"></a>我，理解了调教的意义</h1><p>兴奋过后，我不禁想到：既然AI可以理解人类的部分情感，并对此生成歌声，那么，像我一样的调教爱好者，V家里面负有盛名的调教师又有什么存在的意义呢。我陷入了消沉。我的调教水平显然是不如各位调教大家的，我动天依AI自己生成的参数甚至有时会让歌声更加难听，我调std声库明显也无法达到天依AI的效果……</p>
-<p>我将我的想法与anda交流，anda表示我是个懒狗，他还极力反对我使用天依AI进行调教组的一些分享，并认为AI会把人都变成懒狗。同时，我以《檐枫Dreamer》的最后一段呼号为样本，将诗岸与天依进行对比，结果发现，天依对我最后一段呼号的理解有很大的偏差，我甚至感觉这部分是败笔。按照自己的理解对此进行调教的时候，天依似乎与我闹别扭般，坚持要按照自己的理解唱。我拗不过她（实际上是太菜了，感觉调完了还不如原来的），只好去找诗岸。诗岸就听话多了，我咋画她咋唱，不一会儿就唱出了我想表达的情感。我恍然大悟，原来AI并不是万能的。AI虽然有着高度自动化的优势，但是AI也会生成高度模式化的东西，让歌声失去特点，让人感到索然无味。</p>
-<p>我回忆着这些年来听过的V曲，猛然发现各位P主都有着自己独特的调教风格，这些独特的调教风格和词曲一起，构成了一首歌鲜明的特点。有时候，单听调教，我们就能听出这是哪位P主的歌。AI调教部分地磨灭了这一部分的特点，</p>
-<p>同时，在我做商单调教的时候，我发现了ACE一个严重的问题-可塑性差。我的学长希望我使用起礼或者起复唱出一个坚定的声音（最好是使用起复的男声），按理说，使用VOCALOID或者Synthesizer V，这不是一件困难的事情。但是ACE却给了我当头一棒。起礼起复二人声音都是偏温婉的，我使用起复调了一段demo，但是我往死里拉张力拉共振峰，试过各种方式，就是感觉差点坚定的味道。学长听完也表示难以达到要求，我只好改用起礼。在此之后，我花费了大量的时间画了夸张的张力曲线，才让起礼唱的那么坚定一点点。这让我十分难受，同时ACE没有支持变速，我只好将工程拆成三段来做，不能导入vsqx，我只好让Synthesizer V充当midi转换器。（说好的10月底支持变速呢，到22年底我才看见ACE支持了变速，恼）</p>
-<p><img src="/2023/10/16/%E5%9C%A8%E5%A4%A9%E4%BE%9DACE%E5%85%AC%E6%B5%8B%E5%90%8E%E7%9A%84%E4%B8%80%E4%BA%9B%E6%80%9D%E8%80%83/%E5%9B%BE%E7%89%871.png" srcset="/img/loading.gif" lazyload alt="夸张的张力"></p>
-<p>经历了许多，我终于理解了调教的意义。目前的AI还是很难准确理解人类的词曲包含的感情的，把调教完全交给AI来做只能生成一些高度同质化的东西。而人类想写出一首歌，必然有着他想要表达的东西。我在我的生活中经历了一件事情，我将这件事写成歌，来抒发自己的一些感情；我喜欢上了某个女孩，我将我的思绪写成歌，来表达自己的一些爱慕；我对我的人生进行了一些幼稚的思考，我将这些思考写成歌，来发表自己的一些看法……我写出词曲，我将其输入调教软件，我按照我的想法画出参数曲线，或好听或奇怪的歌声从耳机中流出，表达的是我自己的感情。我终于醒悟了，AI永远无法取代掉调教师的创作，她只能成为调教师的辅助工具，为调教师提供建议。</p>
-<h1 id="做一些梦"><a href="#做一些梦" class="headerlink" title="做一些梦"></a>做一些梦</h1><p>希望稔和Dreamtonics合作搞个天依的Synthesizer V声库，这样我就能方便地使用Synthesizer V调教天依了。</p>
-<p>谁用了Synthesizer V以后还想用VOCALOID啊（挨打）</p>
+                <h1 id="Synthesizer-V简介"><a href="#Synthesizer-V简介" class="headerlink" title="Synthesizer V简介"></a>Synthesizer V简介</h1><p>Synthesizer V（以下简称SV）是由以华侃如（Kanru Hua）为首的Dreamtonics Co,. Ltd.开发的歌声合成引擎及编辑器软件（V表示第5次架构迭代）。该引擎采用了自主研发的基于人工神经网络及拼接合成算法的LLSM（底层语音模型）技术，仅使用少量采样数据即能生成自然的声音。</p>
+<p>Synthesizer V使用的歌声数据库具有Standard和AI两种不同版本，分别对应WaveNet vocoder强化的传统拼接歌声合成（Standard）和基于机器学习的歌声合成（AI）。</p>
+<p>简单易用的编辑器，性能强大的引擎，丰富的虚拟歌手声库，较为低廉的价格使得SV已然成为歌声合成按行业的领头羊。</p>
+<h1 id="SV编辑器版本简介"><a href="#SV编辑器版本简介" class="headerlink" title="SV编辑器版本简介"></a>SV编辑器版本简介</h1><p>SV编辑器分为免费的Basic版本和付费的Pro版本。Pro版本突破了Basic版本最多只能添加三条音轨的限制，并增加了新的功能。<br><img src="/2023/10/16/SV1/%E5%8C%BA%E5%88%AB.png" srcset="/img/loading.gif" lazyload alt="功能对比"><br>你需要激活才能使用Pro版本，激活码请通过正规渠道购买，例如<a target="_blank" rel="noopener" href="https://dreamtonics-cn.taobao.com/">Dreamtonics官方淘宝店</a>或者<a target="_blank" rel="noopener" href="https://www.bilibili.com/read/cv17082866/">Dreamtonics官方微信商店</a>。不要去平四李迪克那里买，在他那重置激活次数收你一次五百元，笔者曾经因此血亏100元。<br>由于激活码一码可以激活三台机器，你可以找熟人或者靠谱的人拼车购买。</p>
+<h1 id="SV及声库的安装与激活"><a href="#SV及声库的安装与激活" class="headerlink" title="SV及声库的安装与激活"></a>SV及声库的安装与激活</h1><p>你可以通过各种途径获取SV及其声库安装包，SV安装笔者不再赘述，笔者重点谈谈SV的激活以及声库的安装与激活。</p>
+<h2 id="SV的激活与解激活"><a href="#SV的激活与解激活" class="headerlink" title="SV的激活与解激活"></a>SV的激活与解激活</h2><p>当你打开一个未激活的SV Pro软件时，程序会要求你输入激活码，输入后程序会联网激活。<img src="/2023/10/16/SV1/%E8%A6%81%E6%B1%82%E6%BF%80%E6%B4%BB.png" srcset="/img/loading.gif" lazyload alt="激活提示"><br>输入正确激活码后，程序会联网验证通过。<img src="/2023/10/16/SV1/%E6%BF%80%E6%B4%BB%E6%88%90%E5%8A%9F.png" srcset="/img/loading.gif" lazyload alt="激活成功"><br>当你要对你的计算机系统进行重大改变时（例如重装你的操作系统或者更换硬件），请记得解除你的软件激活，这是笔者血的教训。<img src="/2023/10/16/SV1/%E8%A7%A3%E6%BF%80%E6%B4%BB.png" srcset="/img/loading.gif" lazyload alt="解除激活方法"><br>解除激活后，有如下提示<img src="/2023/10/16/SV1/%E8%A7%A3%E9%99%A4%E6%BF%80%E6%B4%BB%E6%8F%90%E7%A4%BA.png" srcset="/img/loading.gif" lazyload alt="解除激活提示"></p>
+<h2 id="声库的安装与激活"><a href="#声库的安装与激活" class="headerlink" title="声库的安装与激活"></a>声库的安装与激活</h2><h3 id="安装"><a href="#安装" class="headerlink" title="安装"></a>安装</h3><p>SV的声库文件扩展名是.svpk。该文件只能使用SV编辑器打开。<img src="/2023/10/16/SV1/%E5%A3%B0%E5%BA%93%E6%96%87%E4%BB%B6.png" srcset="/img/loading.gif" lazyload alt="声库文件"><br>你必须先安装编辑器才能安装声库。在安装SV任意版本编辑器后，你可以双击打开声库文件，随后SV编辑器会启动，打开声库安装向导。<img src="/2023/10/16/SV1/%E5%A3%B0%E5%BA%93%E5%AE%89%E8%A3%85%E5%90%91%E5%AF%BC.png" srcset="/img/loading.gif" lazyload alt="声库安装向导"><br>单击下一步，向导会让你选择安装位置，你可以选择默认位置。<img src="/2023/10/16/SV1/%E5%AE%89%E8%A3%85%E4%BD%8D%E7%BD%AE%E9%80%89%E6%8B%A9.png" srcset="/img/loading.gif" lazyload alt="选择安装位置"><br>单击下一步，向导开始安装声库，随后，安装完成。<img src="/2023/10/16/SV1/%E5%AE%89%E8%A3%85%E5%AE%8C%E6%88%90.png" srcset="/img/loading.gif" lazyload alt="安装完成"></p>
+<h3 id="激活"><a href="#激活" class="headerlink" title="激活"></a>激活</h3><p>如果你安装的是Lite版本声库，则不需要激活。<br>激活流程大致与编辑器相同，本文以图表示。<img src="/2023/10/16/SV1/%E6%BF%80%E6%B4%BB%E5%A3%B0%E5%BA%93.png" srcset="/img/loading.gif" lazyload alt="激活流程"><br>操作后会出现如图所示的对话框，输入你的激活码，程序就会联网激活。<img src="/2023/10/16/SV1/%E6%BF%80%E6%B4%BB.png" srcset="/img/loading.gif" lazyload><br>声库激活码可以前往<a target="_blank" rel="noopener" href="https://dreamtonics-cn.taobao.com/">Dreamtonics官方淘宝店</a>或者<a target="_blank" rel="noopener" href="https://www.bilibili.com/read/cv17082866/">Dreamtonics官方微信商店</a>购买。如果你要调校平四歌姬，可以前往<a target="_blank" rel="noopener" href="https://shop109464960.taobao.com/">平行四界Quadimension</a>购买。声库理论上也能拼车。<br>解除激活操作方式与编辑器相同。<br>请牢记，当你要对你的计算机系统进行重大改变时（例如重装你的操作系统或者更换硬件），请记得解除你的软件激活，这是笔者血的教训。</p>
+<h1 id="预告"><a href="#预告" class="headerlink" title="预告"></a>预告</h1><p>下篇博客，笔者将会详细介绍本软件的基本框架与使用方法，如果有的话。</p>
 
                 
               </div>
@@ -386,15 +386,13 @@
     <div class="post-meta">
       <i class="iconfont icon-tags"></i>
       
-        <a href="/tags/%E6%9D%82%E8%B0%88/" class="print-no-link">#杂谈</a>
-      
         <a href="/tags/%E8%99%9A%E6%8B%9F%E6%AD%8C%E5%A7%AC/" class="print-no-link">#虚拟歌姬</a>
       
         <a href="/tags/%E6%AD%8C%E5%A3%B0%E5%90%88%E6%88%90%E5%BC%95%E6%93%8E/" class="print-no-link">#歌声合成引擎</a>
       
-        <a href="/tags/Ace-Studio/" class="print-no-link">#Ace Studio</a>
+        <a href="/tags/%E6%95%99%E5%AD%A6/" class="print-no-link">#教学</a>
       
-        <a href="/tags/AI/" class="print-no-link">#AI</a>
+        <a href="/tags/Synthesizer-V/" class="print-no-link">#Synthesizer V</a>
       
     </div>
   
@@ -406,8 +404,8 @@
 
   <div class="license-box my-3">
     <div class="license-title">
-      <div>在天依ACE公测后的一些思考</div>
-      <div>https://scientificw.github.io/2023/10/16/在天依ACE公测后的一些思考/</div>
+      <div>Synthesizer V系列教程 Vol.1</div>
+      <div>https://scientificw.github.io/2023/10/16/SV1/</div>
     </div>
     <div class="license-meta">
       
@@ -451,18 +449,12 @@
                   <article class="post-prev col-6">
                     
                     
-                      <a href="/2023/10/16/SV1/" title="Synthesizer V系列教程 Vol.1">
-                        <i class="iconfont icon-arrowleft"></i>
-                        <span class="hidden-mobile">Synthesizer V系列教程 Vol.1</span>
-                        <span class="visible-mobile">上一篇</span>
-                      </a>
-                    
                   </article>
                   <article class="post-next col-6">
                     
                     
-                      <a href="/2023/10/09/%E8%BF%B7/" title="迷">
-                        <span class="hidden-mobile">迷</span>
+                      <a href="/2023/10/16/%E5%9C%A8%E5%A4%A9%E4%BE%9DACE%E5%85%AC%E6%B5%8B%E5%90%8E%E7%9A%84%E4%B8%80%E4%BA%9B%E6%80%9D%E8%80%83/" title="在天依ACE公测后的一些思考">
+                        <span class="hidden-mobile">在天依ACE公测后的一些思考</span>
                         <span class="visible-mobile">下一篇</span>
                         <i class="iconfont icon-arrowright"></i>
                       </a>
