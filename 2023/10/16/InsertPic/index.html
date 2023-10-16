@@ -16,37 +16,22 @@
   <meta name="author" content="Sawamura">
   <meta name="keywords" content="">
   
-    <meta name="description" content="Synthesizer V简介Synthesizer V（以下简称SV）是由以华侃如（Kanru Hua）为首的Dreamtonics Co,. Ltd.开发的歌声合成引擎及编辑器软件（V表示第5次架构迭代）。该引擎采用了自主研发的基于人工神经网络及拼接合成算法的LLSM（底层语音模型）技术，仅使用少量采样数据即能生成自然的声音。 Synthesizer V使用的歌声数据库具有Standard和A">
+    <meta name="description" content="笔者在昨晚书写博客文章的时候，产生了在博客文章中插入图片的需求。经过了多番尝试，笔者最后成功使用了markdown语法向博客文章插入图片，并能够正常添加图片注释。本文将从hexo的资源文件夹机制谈起，并推荐一种笔者使用的方式。感谢WTN提供的相关帮助。 全局资源文件夹与文章资源文件夹全局资源文件夹资源（Asset）代表 source 文件夹中除了文章以外的所有文件，例如图片、CSS、JS 文件等。">
 <meta property="og:type" content="article">
-<meta property="og:title" content="Synthesizer V系列教程 Vol.1">
-<meta property="og:url" content="https://scientificw.github.io/2023/10/16/SV1/index.html">
+<meta property="og:title" content="Hexo博客插入图片的实践">
+<meta property="og:url" content="https://scientificw.github.io/2023/10/16/InsertPic/index.html">
 <meta property="og:site_name" content="SawamuraRuiN&#39;s Blog">
-<meta property="og:description" content="Synthesizer V简介Synthesizer V（以下简称SV）是由以华侃如（Kanru Hua）为首的Dreamtonics Co,. Ltd.开发的歌声合成引擎及编辑器软件（V表示第5次架构迭代）。该引擎采用了自主研发的基于人工神经网络及拼接合成算法的LLSM（底层语音模型）技术，仅使用少量采样数据即能生成自然的声音。 Synthesizer V使用的歌声数据库具有Standard和A">
+<meta property="og:description" content="笔者在昨晚书写博客文章的时候，产生了在博客文章中插入图片的需求。经过了多番尝试，笔者最后成功使用了markdown语法向博客文章插入图片，并能够正常添加图片注释。本文将从hexo的资源文件夹机制谈起，并推荐一种笔者使用的方式。感谢WTN提供的相关帮助。 全局资源文件夹与文章资源文件夹全局资源文件夹资源（Asset）代表 source 文件夹中除了文章以外的所有文件，例如图片、CSS、JS 文件等。">
 <meta property="og:locale" content="zh_CN">
-<meta property="og:image" content="https://scientificw.github.io/2023/10/16/SV1/%E5%8C%BA%E5%88%AB.png">
-<meta property="og:image" content="https://scientificw.github.io/2023/10/16/SV1/%E8%A6%81%E6%B1%82%E6%BF%80%E6%B4%BB.png">
-<meta property="og:image" content="https://scientificw.github.io/2023/10/16/SV1/%E6%BF%80%E6%B4%BB%E6%88%90%E5%8A%9F.png">
-<meta property="og:image" content="https://scientificw.github.io/2023/10/16/SV1/%E8%A7%A3%E6%BF%80%E6%B4%BB.png">
-<meta property="og:image" content="https://scientificw.github.io/2023/10/16/SV1/%E8%A7%A3%E9%99%A4%E6%BF%80%E6%B4%BB%E6%8F%90%E7%A4%BA.png">
-<meta property="og:image" content="https://scientificw.github.io/2023/10/16/SV1/%E5%A3%B0%E5%BA%93%E6%96%87%E4%BB%B6.png">
-<meta property="og:image" content="https://scientificw.github.io/2023/10/16/SV1/%E5%A3%B0%E5%BA%93%E5%AE%89%E8%A3%85%E5%90%91%E5%AF%BC.png">
-<meta property="og:image" content="https://scientificw.github.io/2023/10/16/SV1/%E5%AE%89%E8%A3%85%E4%BD%8D%E7%BD%AE%E9%80%89%E6%8B%A9.png">
-<meta property="og:image" content="https://scientificw.github.io/2023/10/16/SV1/%E5%AE%89%E8%A3%85%E5%AE%8C%E6%88%90.png">
-<meta property="og:image" content="https://scientificw.github.io/2023/10/16/SV1/%E6%BF%80%E6%B4%BB%E5%A3%B0%E5%BA%93.png">
-<meta property="og:image" content="https://scientificw.github.io/2023/10/16/SV1/%E6%BF%80%E6%B4%BB.png">
-<meta property="article:published_time" content="2023-10-15T17:35:57.000Z">
-<meta property="article:modified_time" content="2023-10-16T01:52:39.057Z">
+<meta property="article:published_time" content="2023-10-16T01:55:43.000Z">
+<meta property="article:modified_time" content="2023-10-16T02:27:53.887Z">
 <meta property="article:author" content="Sawamura">
-<meta property="article:tag" content="虚拟歌姬">
-<meta property="article:tag" content="歌声合成引擎">
-<meta property="article:tag" content="教学">
-<meta property="article:tag" content="Synthesizer V">
+<meta property="article:tag" content="技术">
 <meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:image" content="https://scientificw.github.io/2023/10/16/SV1/%E5%8C%BA%E5%88%AB.png">
   
   
   
-  <title>Synthesizer V系列教程 Vol.1 - SawamuraRuiN&#39;s Blog</title>
+  <title>Hexo博客插入图片的实践 - SawamuraRuiN&#39;s Blog</title>
 
   <link  rel="stylesheet" href="https://lib.baomitu.com/twitter-bootstrap/4.6.1/css/bootstrap.min.css" />
 
@@ -253,7 +238,7 @@
       <div class="banner-text text-center fade-in-up">
         <div class="h2">
           
-            <span id="subtitle" data-typed-text="Synthesizer V系列教程 Vol.1"></span>
+            <span id="subtitle" data-typed-text="Hexo博客插入图片的实践"></span>
           
         </div>
 
@@ -264,8 +249,8 @@
     
       <span class="post-meta">
         <i class="iconfont icon-date-fill" aria-hidden="true"></i>
-        <time datetime="2023-10-16 01:35" pubdate>
-          2023年10月16日 凌晨
+        <time datetime="2023-10-16 09:55" pubdate>
+          2023年10月16日 上午
         </time>
       </span>
     
@@ -276,7 +261,7 @@
       <span class="post-meta mr-2">
         <i class="iconfont icon-chart"></i>
         
-          1.2k 字
+          1.1k 字
         
       </span>
     
@@ -332,20 +317,18 @@
       <div class="container nopadding-x-md" id="board-ctn">
         <div id="board">
           <article class="post-content mx-auto">
-            <h1 id="seo-header">Synthesizer V系列教程 Vol.1</h1>
+            <h1 id="seo-header">Hexo博客插入图片的实践</h1>
             
             
               <div class="markdown-body">
                 
-                <h1 id="Synthesizer-V简介"><a href="#Synthesizer-V简介" class="headerlink" title="Synthesizer V简介"></a>Synthesizer V简介</h1><p>Synthesizer V（以下简称SV）是由以华侃如（Kanru Hua）为首的Dreamtonics Co,. Ltd.开发的歌声合成引擎及编辑器软件（V表示第5次架构迭代）。该引擎采用了自主研发的基于人工神经网络及拼接合成算法的LLSM（底层语音模型）技术，仅使用少量采样数据即能生成自然的声音。</p>
-<p>Synthesizer V使用的歌声数据库具有Standard和AI两种不同版本，分别对应WaveNet vocoder强化的传统拼接歌声合成（Standard）和基于机器学习的歌声合成（AI）。</p>
-<p>简单易用的编辑器，性能强大的引擎，丰富的虚拟歌手声库，较为低廉的价格使得SV已然成为歌声合成按行业的领头羊。</p>
-<h1 id="SV编辑器版本简介"><a href="#SV编辑器版本简介" class="headerlink" title="SV编辑器版本简介"></a>SV编辑器版本简介</h1><p>SV编辑器分为免费的Basic版本和付费的Pro版本。Pro版本突破了Basic版本最多只能添加三条音轨的限制，并增加了新的功能。<br><img src="/2023/10/16/SV1/%E5%8C%BA%E5%88%AB.png" srcset="/img/loading.gif" lazyload alt="功能对比"><br>你需要激活才能使用Pro版本，激活码请通过正规渠道购买，例如<a target="_blank" rel="noopener" href="https://dreamtonics-cn.taobao.com/">Dreamtonics官方淘宝店</a>或者<a target="_blank" rel="noopener" href="https://www.bilibili.com/read/cv17082866/">Dreamtonics官方微信商店</a>。不要去平四李迪克那里买，在他那重置激活次数收你一次五十元，笔者曾经因此血亏100元。<br>由于激活码一码可以激活三台机器，你可以找熟人或者靠谱的人拼车购买。</p>
-<h1 id="SV及声库的安装与激活"><a href="#SV及声库的安装与激活" class="headerlink" title="SV及声库的安装与激活"></a>SV及声库的安装与激活</h1><p>你可以通过各种途径获取SV及其声库安装包，SV安装笔者不再赘述，笔者重点谈谈SV的激活以及声库的安装与激活。</p>
-<h2 id="SV的激活与解激活"><a href="#SV的激活与解激活" class="headerlink" title="SV的激活与解激活"></a>SV的激活与解激活</h2><p>当你打开一个未激活的SV Pro软件时，程序会要求你输入激活码，输入后程序会联网激活。<img src="/2023/10/16/SV1/%E8%A6%81%E6%B1%82%E6%BF%80%E6%B4%BB.png" srcset="/img/loading.gif" lazyload alt="激活提示"><br>输入正确激活码后，程序会联网验证通过。<img src="/2023/10/16/SV1/%E6%BF%80%E6%B4%BB%E6%88%90%E5%8A%9F.png" srcset="/img/loading.gif" lazyload alt="激活成功"><br>当你要对你的计算机系统进行重大改变时（例如重装你的操作系统或者更换硬件），请记得解除你的软件激活，这是笔者血的教训。<img src="/2023/10/16/SV1/%E8%A7%A3%E6%BF%80%E6%B4%BB.png" srcset="/img/loading.gif" lazyload alt="解除激活方法"><br>解除激活后，有如下提示<img src="/2023/10/16/SV1/%E8%A7%A3%E9%99%A4%E6%BF%80%E6%B4%BB%E6%8F%90%E7%A4%BA.png" srcset="/img/loading.gif" lazyload alt="解除激活提示"></p>
-<h2 id="声库的安装与激活"><a href="#声库的安装与激活" class="headerlink" title="声库的安装与激活"></a>声库的安装与激活</h2><h3 id="安装"><a href="#安装" class="headerlink" title="安装"></a>安装</h3><p>SV的声库文件扩展名是.svpk。该文件只能使用SV编辑器打开。<img src="/2023/10/16/SV1/%E5%A3%B0%E5%BA%93%E6%96%87%E4%BB%B6.png" srcset="/img/loading.gif" lazyload alt="声库文件"><br>你必须先安装编辑器才能安装声库。在安装SV任意版本编辑器后，你可以双击打开声库文件，随后SV编辑器会启动，打开声库安装向导。<img src="/2023/10/16/SV1/%E5%A3%B0%E5%BA%93%E5%AE%89%E8%A3%85%E5%90%91%E5%AF%BC.png" srcset="/img/loading.gif" lazyload alt="声库安装向导"><br>单击下一步，向导会让你选择安装位置，你可以选择默认位置。<img src="/2023/10/16/SV1/%E5%AE%89%E8%A3%85%E4%BD%8D%E7%BD%AE%E9%80%89%E6%8B%A9.png" srcset="/img/loading.gif" lazyload alt="选择安装位置"><br>单击下一步，向导开始安装声库，随后，安装完成。<img src="/2023/10/16/SV1/%E5%AE%89%E8%A3%85%E5%AE%8C%E6%88%90.png" srcset="/img/loading.gif" lazyload alt="安装完成"></p>
-<h3 id="激活"><a href="#激活" class="headerlink" title="激活"></a>激活</h3><p>如果你安装的是Lite版本声库，则不需要激活。<br>激活流程大致与编辑器相同，本文以图表示。<img src="/2023/10/16/SV1/%E6%BF%80%E6%B4%BB%E5%A3%B0%E5%BA%93.png" srcset="/img/loading.gif" lazyload alt="激活流程"><br>操作后会出现如图所示的对话框，输入你的激活码，程序就会联网激活。<img src="/2023/10/16/SV1/%E6%BF%80%E6%B4%BB.png" srcset="/img/loading.gif" lazyload><br>声库激活码可以前往<a target="_blank" rel="noopener" href="https://dreamtonics-cn.taobao.com/">Dreamtonics官方淘宝店</a>或者<a target="_blank" rel="noopener" href="https://www.bilibili.com/read/cv17082866/">Dreamtonics官方微信商店</a>购买。如果你要调校平四歌姬，可以前往<a target="_blank" rel="noopener" href="https://shop109464960.taobao.com/">平行四界Quadimension</a>购买。声库理论上也能拼车。<br>解除激活操作方式与编辑器相同。<br>请牢记，当你要对你的计算机系统进行重大改变时（例如重装你的操作系统或者更换硬件），请记得解除你的软件激活，这是笔者血的教训。</p>
-<h1 id="预告"><a href="#预告" class="headerlink" title="预告"></a>预告</h1><p>下篇博客，笔者将会详细介绍本软件的基本框架与使用方法，如果有的话。</p>
+                <p>笔者在昨晚书写博客文章的时候，产生了在博客文章中插入图片的需求。经过了多番尝试，笔者最后成功使用了markdown语法向博客文章插入图片，并能够正常添加图片注释。本文将从hexo的资源文件夹机制谈起，并推荐一种笔者使用的方式。感谢<a target="_blank" rel="noopener" href="https://wangtoonaive.github.io/">WTN</a>提供的相关帮助。</p>
+<h1 id="全局资源文件夹与文章资源文件夹"><a href="#全局资源文件夹与文章资源文件夹" class="headerlink" title="全局资源文件夹与文章资源文件夹"></a>全局资源文件夹与文章资源文件夹</h1><h2 id="全局资源文件夹"><a href="#全局资源文件夹" class="headerlink" title="全局资源文件夹"></a>全局资源文件夹</h2><p>资源（Asset）代表 source 文件夹中除了文章以外的所有文件，例如图片、CSS、JS 文件等。比方说，如果你的Hexo项目中只有少量图片，那最简单的方法就是将它们放在 source&#x2F;images 文件夹中。然后通过类似于 <code>![](/images/image.jpg)</code> 的方法访问它们。<br>但是，当制作教程博客等文章时，可能会使用大量图片。这种方式可能会造成文件管理的混乱，使得博客可维护性变差。笔者推荐使用文章资源文件夹来管理图片资源。</p>
+<h2 id="文章资源文件夹"><a href="#文章资源文件夹" class="headerlink" title="文章资源文件夹"></a>文章资源文件夹</h2><p>Hexo提供了一种在使用<code>hexo new [layout] &lt;title&gt;</code>命令创建新博客文章时同时在<code>source/_post</code>目录下创建博客文章同名文件夹的功能。这个文件夹就是该文章的文件资源文件夹。<br>要开启此功能，您需要打开<code>_config.yml</code>，并进行如下修改。</p>
+<figure class="highlight yaml"><figcaption><span>yaml</span></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs yaml"><span class="hljs-attr">post_asset_folder:</span> <span class="hljs-literal">true</span><br></code></pre></td></tr></table></figure>
+<h1 id="推荐的一种图片插入方式"><a href="#推荐的一种图片插入方式" class="headerlink" title="推荐的一种图片插入方式"></a>推荐的一种图片插入方式</h1><p>笔者在尝试官方给出的一些插入方式后，认为使用 Markdown 嵌入图片效果最佳，但由于hexo本身的特性，使用该功能需要一些设置。下面将详细介绍如何使用该方法插入图片。<br>首先需要对<code>_config.yml</code>进行配置：</p>
+<figure class="highlight yaml"><figcaption><span>yaml</span></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><code class="hljs yaml"><span class="hljs-attr">post_asset_folder:</span> <span class="hljs-literal">true</span><br><span class="hljs-attr">marked:</span><br>  <span class="hljs-attr">prependRoot:</span> <span class="hljs-literal">true</span><br>  <span class="hljs-attr">postAsset:</span> <span class="hljs-literal">true</span><br></code></pre></td></tr></table></figure>
+<p>配置完成之后，资源图片将会被自动解析为其对应文章的路径。<br>例如： image.jpg 位置为 &#x2F;2020&#x2F;01&#x2F;02&#x2F;foo&#x2F;image.jpg ，这表示它是 &#x2F;2020&#x2F;01&#x2F;02&#x2F;foo&#x2F; 文章的一张资源图片， <code>![](image.jpg)</code> 将会被解析为 <code>&lt;img src=&quot;/2020/01/02/foo/image.jpg&quot;&gt;</code>。<br>这样配置之后，如果您要在文章某个位置引用图片，只需将图片复制到相应资源文件夹，然后在文章相应位置添加<code>![图片注释](文件名)</code>即可。这种方式使用了大众较为熟悉的markdown语法，而且添加图片注释较为容易，在某些主题中，插入的图片还会默认居中，较为美观，笔者比较推荐。缺点是由于使用了奇怪的相对路径，在使用VS CODE预览功能时可能不会解析出图片。</p>
 
                 
               </div>
@@ -386,13 +369,7 @@
     <div class="post-meta">
       <i class="iconfont icon-tags"></i>
       
-        <a href="/tags/%E8%99%9A%E6%8B%9F%E6%AD%8C%E5%A7%AC/" class="print-no-link">#虚拟歌姬</a>
-      
-        <a href="/tags/%E6%AD%8C%E5%A3%B0%E5%90%88%E6%88%90%E5%BC%95%E6%93%8E/" class="print-no-link">#歌声合成引擎</a>
-      
-        <a href="/tags/%E6%95%99%E5%AD%A6/" class="print-no-link">#教学</a>
-      
-        <a href="/tags/Synthesizer-V/" class="print-no-link">#Synthesizer V</a>
+        <a href="/tags/%E6%8A%80%E6%9C%AF/" class="print-no-link">#技术</a>
       
     </div>
   
@@ -404,8 +381,8 @@
 
   <div class="license-box my-3">
     <div class="license-title">
-      <div>Synthesizer V系列教程 Vol.1</div>
-      <div>https://scientificw.github.io/2023/10/16/SV1/</div>
+      <div>Hexo博客插入图片的实践</div>
+      <div>https://scientificw.github.io/2023/10/16/InsertPic/</div>
     </div>
     <div class="license-meta">
       
@@ -449,18 +426,12 @@
                   <article class="post-prev col-6">
                     
                     
-                      <a href="/2023/10/16/InsertPic/" title="Hexo博客插入图片的实践">
-                        <i class="iconfont icon-arrowleft"></i>
-                        <span class="hidden-mobile">Hexo博客插入图片的实践</span>
-                        <span class="visible-mobile">上一篇</span>
-                      </a>
-                    
                   </article>
                   <article class="post-next col-6">
                     
                     
-                      <a href="/2023/10/16/%E5%9C%A8%E5%A4%A9%E4%BE%9DACE%E5%85%AC%E6%B5%8B%E5%90%8E%E7%9A%84%E4%B8%80%E4%BA%9B%E6%80%9D%E8%80%83/" title="在天依ACE公测后的一些思考">
-                        <span class="hidden-mobile">在天依ACE公测后的一些思考</span>
+                      <a href="/2023/10/16/SV1/" title="Synthesizer V系列教程 Vol.1">
+                        <span class="hidden-mobile">Synthesizer V系列教程 Vol.1</span>
                         <span class="visible-mobile">下一篇</span>
                         <i class="iconfont icon-arrowright"></i>
                       </a>
