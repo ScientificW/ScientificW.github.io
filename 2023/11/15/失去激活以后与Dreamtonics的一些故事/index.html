@@ -16,22 +16,33 @@
   <meta name="author" content="Sawamura">
   <meta name="keywords" content="">
   
-    <meta name="description" content="笔者在昨晚书写博客文章的时候，产生了在博客文章中插入图片的需求。经过了多番尝试，笔者最后成功使用了markdown语法向博客文章插入图片，并能够正常添加图片注释。本文将从hexo的资源文件夹机制谈起，并推荐一种笔者使用的方式。感谢WTN提供的相关帮助。 全局资源文件夹与文章资源文件夹全局资源文件夹资源（Asset）代表 source 文件夹中除了文章以外的所有文件，例如图片、CSS、JS 文件等。">
+    <meta name="description" content="起因在今年上半年的一天，我电脑的环境挂了。懒得解决的我选择了格式化我的硬盘，并重新开始，从安装Windows开始配置我的新环境。然而，我忘了一个非常重要的事情，那就是解除我Synthesizer V Pro和星尘infinity以及夏语遥的激活。不出所料地，安装系统以后，我发现我的激活没有了。很乐的一件事情，在那个时候，除了SV以外的软件，我都是借哥们儿的。我麻了。这几个软件一个比一个贵，我不是很">
 <meta property="og:type" content="article">
-<meta property="og:title" content="Hexo博客插入图片的实践">
-<meta property="og:url" content="https://scientificw.github.io/2023/10/16/InsertPic/index.html">
+<meta property="og:title" content="失去激活以后与Dreamtonics的一些故事">
+<meta property="og:url" content="https://scientificw.github.io/2023/11/15/%E5%A4%B1%E5%8E%BB%E6%BF%80%E6%B4%BB%E4%BB%A5%E5%90%8E%E4%B8%8EDreamtonics%E7%9A%84%E4%B8%80%E4%BA%9B%E6%95%85%E4%BA%8B/index.html">
 <meta property="og:site_name" content="澤村睿的火焰山">
-<meta property="og:description" content="笔者在昨晚书写博客文章的时候，产生了在博客文章中插入图片的需求。经过了多番尝试，笔者最后成功使用了markdown语法向博客文章插入图片，并能够正常添加图片注释。本文将从hexo的资源文件夹机制谈起，并推荐一种笔者使用的方式。感谢WTN提供的相关帮助。 全局资源文件夹与文章资源文件夹全局资源文件夹资源（Asset）代表 source 文件夹中除了文章以外的所有文件，例如图片、CSS、JS 文件等。">
+<meta property="og:description" content="起因在今年上半年的一天，我电脑的环境挂了。懒得解决的我选择了格式化我的硬盘，并重新开始，从安装Windows开始配置我的新环境。然而，我忘了一个非常重要的事情，那就是解除我Synthesizer V Pro和星尘infinity以及夏语遥的激活。不出所料地，安装系统以后，我发现我的激活没有了。很乐的一件事情，在那个时候，除了SV以外的软件，我都是借哥们儿的。我麻了。这几个软件一个比一个贵，我不是很">
 <meta property="og:locale" content="zh_CN">
-<meta property="article:published_time" content="2023-10-16T01:55:43.000Z">
-<meta property="article:modified_time" content="2023-10-16T02:30:05.721Z">
+<meta property="og:image" content="https://scientificw.github.io/2023/11/15/%E5%A4%B1%E5%8E%BB%E6%BF%80%E6%B4%BB%E4%BB%A5%E5%90%8E%E4%B8%8EDreamtonics%E7%9A%84%E4%B8%80%E4%BA%9B%E6%95%85%E4%BA%8B/1.png">
+<meta property="og:image" content="https://scientificw.github.io/2023/11/15/%E5%A4%B1%E5%8E%BB%E6%BF%80%E6%B4%BB%E4%BB%A5%E5%90%8E%E4%B8%8EDreamtonics%E7%9A%84%E4%B8%80%E4%BA%9B%E6%95%85%E4%BA%8B/2.png">
+<meta property="og:image" content="https://scientificw.github.io/2023/11/15/%E5%A4%B1%E5%8E%BB%E6%BF%80%E6%B4%BB%E4%BB%A5%E5%90%8E%E4%B8%8EDreamtonics%E7%9A%84%E4%B8%80%E4%BA%9B%E6%95%85%E4%BA%8B/3.png">
+<meta property="og:image" content="https://scientificw.github.io/2023/11/15/%E5%A4%B1%E5%8E%BB%E6%BF%80%E6%B4%BB%E4%BB%A5%E5%90%8E%E4%B8%8EDreamtonics%E7%9A%84%E4%B8%80%E4%BA%9B%E6%95%85%E4%BA%8B/4.png">
+<meta property="og:image" content="https://scientificw.github.io/2023/11/15/%E5%A4%B1%E5%8E%BB%E6%BF%80%E6%B4%BB%E4%BB%A5%E5%90%8E%E4%B8%8EDreamtonics%E7%9A%84%E4%B8%80%E4%BA%9B%E6%95%85%E4%BA%8B/5.png">
+<meta property="og:image" content="https://scientificw.github.io/2023/11/15/%E5%A4%B1%E5%8E%BB%E6%BF%80%E6%B4%BB%E4%BB%A5%E5%90%8E%E4%B8%8EDreamtonics%E7%9A%84%E4%B8%80%E4%BA%9B%E6%95%85%E4%BA%8B/6.png">
+<meta property="og:image" content="https://scientificw.github.io/2023/11/15/%E5%A4%B1%E5%8E%BB%E6%BF%80%E6%B4%BB%E4%BB%A5%E5%90%8E%E4%B8%8EDreamtonics%E7%9A%84%E4%B8%80%E4%BA%9B%E6%95%85%E4%BA%8B/7.png">
+<meta property="article:published_time" content="2023-11-15T07:10:30.000Z">
+<meta property="article:modified_time" content="2023-11-15T08:41:13.808Z">
 <meta property="article:author" content="Sawamura">
-<meta property="article:tag" content="技术">
+<meta property="article:tag" content="虚拟歌姬">
+<meta property="article:tag" content="歌声合成引擎">
+<meta property="article:tag" content="Synthesizer V">
+<meta property="article:tag" content="警示">
 <meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:image" content="https://scientificw.github.io/2023/11/15/%E5%A4%B1%E5%8E%BB%E6%BF%80%E6%B4%BB%E4%BB%A5%E5%90%8E%E4%B8%8EDreamtonics%E7%9A%84%E4%B8%80%E4%BA%9B%E6%95%85%E4%BA%8B/1.png">
   
   
   
-  <title>Hexo博客插入图片的实践 - 澤村睿的火焰山</title>
+  <title>失去激活以后与Dreamtonics的一些故事 - 澤村睿的火焰山</title>
 
   <link  rel="stylesheet" href="https://lib.baomitu.com/twitter-bootstrap/4.6.1/css/bootstrap.min.css" />
 
@@ -238,7 +249,7 @@
       <div class="banner-text text-center fade-in-up">
         <div class="h2">
           
-            <span id="subtitle" data-typed-text="Hexo博客插入图片的实践"></span>
+            <span id="subtitle" data-typed-text="失去激活以后与Dreamtonics的一些故事"></span>
           
         </div>
 
@@ -249,8 +260,8 @@
     
       <span class="post-meta">
         <i class="iconfont icon-date-fill" aria-hidden="true"></i>
-        <time datetime="2023-10-16 09:55" pubdate>
-          2023年10月16日 上午
+        <time datetime="2023-11-15 15:10" pubdate>
+          2023年11月15日 下午
         </time>
       </span>
     
@@ -261,7 +272,7 @@
       <span class="post-meta mr-2">
         <i class="iconfont icon-chart"></i>
         
-          1.1k 字
+          657 字
         
       </span>
     
@@ -272,7 +283,7 @@
         
         
         
-          10 分钟
+          6 分钟
         
       </span>
     
@@ -317,18 +328,14 @@
       <div class="container nopadding-x-md" id="board-ctn">
         <div id="board">
           <article class="post-content mx-auto">
-            <h1 id="seo-header">Hexo博客插入图片的实践</h1>
+            <h1 id="seo-header">失去激活以后与Dreamtonics的一些故事</h1>
             
             
               <div class="markdown-body">
                 
-                <p>笔者在昨晚书写博客文章的时候，产生了在博客文章中插入图片的需求。经过了多番尝试，笔者最后成功使用了markdown语法向博客文章插入图片，并能够正常添加图片注释。本文将从hexo的资源文件夹机制谈起，并推荐一种笔者使用的方式。感谢<a target="_blank" rel="noopener" href="https://wangtoonaive.github.io/">WTN</a>提供的相关帮助。</p>
-<h1 id="全局资源文件夹与文章资源文件夹"><a href="#全局资源文件夹与文章资源文件夹" class="headerlink" title="全局资源文件夹与文章资源文件夹"></a>全局资源文件夹与文章资源文件夹</h1><h2 id="全局资源文件夹"><a href="#全局资源文件夹" class="headerlink" title="全局资源文件夹"></a>全局资源文件夹</h2><p>资源（Asset）代表 source 文件夹中除了文章以外的所有文件，例如图片、CSS、JS 文件等。比方说，如果你的Hexo项目中只有少量图片，那最简单的方法就是将它们放在 source&#x2F;images 文件夹中。然后通过类似于 <code>![](/images/image.jpg)</code> 的方法访问它们。<br>但是，当制作教程博客等文章时，可能会使用大量图片。这种方式可能会造成文件管理的混乱，使得博客可维护性变差。笔者推荐使用文章资源文件夹来管理图片资源。</p>
-<h2 id="文章资源文件夹"><a href="#文章资源文件夹" class="headerlink" title="文章资源文件夹"></a>文章资源文件夹</h2><p>Hexo提供了一种在使用<code>hexo new [layout] &lt;title&gt;</code>命令创建新博客文章时同时在<code>source/_post</code>目录下创建博客文章同名文件夹的功能。这个文件夹就是该文章的文件资源文件夹。<br>要开启此功能，您需要打开<code>_config.yml</code>，并进行如下修改。</p>
-<figure class="highlight yaml"><figcaption><span>yaml</span></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs yaml"><span class="hljs-attr">post_asset_folder:</span> <span class="hljs-literal">true</span><br></code></pre></td></tr></table></figure>
-<h1 id="推荐的一种图片插入方式"><a href="#推荐的一种图片插入方式" class="headerlink" title="推荐的一种图片插入方式"></a>推荐的一种图片插入方式</h1><p>笔者在尝试官方给出的一些插入方式后，认为使用 Markdown 嵌入图片效果最佳，但由于hexo本身的特性，使用该功能需要一些设置。下面将详细介绍如何使用该方法插入图片。<br>首先需要对<code>_config.yml</code>进行配置：</p>
-<figure class="highlight yaml"><figcaption><span>yaml</span></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><code class="hljs yaml"><span class="hljs-attr">post_asset_folder:</span> <span class="hljs-literal">true</span><br><span class="hljs-attr">marked:</span><br>  <span class="hljs-attr">prependRoot:</span> <span class="hljs-literal">true</span><br>  <span class="hljs-attr">postAsset:</span> <span class="hljs-literal">true</span><br></code></pre></td></tr></table></figure>
-<p>配置完成之后，资源图片将会被自动解析为其对应文章的路径。<br>例如： image.jpg 位置为 &#x2F;2020&#x2F;01&#x2F;02&#x2F;foo&#x2F;image.jpg ，这表示它是 &#x2F;2020&#x2F;01&#x2F;02&#x2F;foo&#x2F; 文章的一张资源图片， <code>![](image.jpg)</code> 将会被解析为 <code>&lt;img src=&quot;/2020/01/02/foo/image.jpg&quot;&gt;</code>。<br>这样配置之后，如果您要在文章某个位置引用图片，只需将图片复制到相应文章资源文件夹，然后在文章相应位置添加<code>![图片注释](文件名)</code>即可。这种方式使用了大众较为熟悉的markdown语法，而且添加图片注释较为容易，在某些主题中，插入的图片还会默认居中，较为美观，笔者比较推荐。缺点是由于使用了奇怪的相对路径，在使用VS CODE预览功能时可能不会解析出图片。</p>
+                <h1 id="起因"><a href="#起因" class="headerlink" title="起因"></a>起因</h1><p>在今年上半年的一天，我电脑的环境挂了。懒得解决的我选择了格式化我的硬盘，并重新开始，从安装Windows开始配置我的新环境。<br>然而，我忘了一个非常重要的事情，那就是解除我Synthesizer V Pro和星尘infinity以及夏语遥的激活。不出所料地，安装系统以后，我发现我的激活没有了。很乐的一件事情，在那个时候，除了SV以外的软件，我都是借哥们儿的。<br>我麻了。这几个软件一个比一个贵，我不是很能赔得起。经过市场调研，我发现，如果你在李迪克这个老狐狸这买声库和软件，你必须以50元一码的价格解除激活。<br>众所周知，我是喜欢白嫖的。于是，我联系了Dreamtonics，联系过程如下。<br>(虽然最后还是给李迪克送钱了)</p>
+<h1 id="邮件"><a href="#邮件" class="headerlink" title="邮件"></a>邮件</h1><p>我使用Gmail联系了官网上标注的邮箱，内容如下。<br><img src="/2023/11/15/%E5%A4%B1%E5%8E%BB%E6%BF%80%E6%B4%BB%E4%BB%A5%E5%90%8E%E4%B8%8EDreamtonics%E7%9A%84%E4%B8%80%E4%BA%9B%E6%95%85%E4%BA%8B/1.png" srcset="/img/loading.gif" lazyload alt="中文邮件内容"><br>结果收到了这样的回复。<br><img src="/2023/11/15/%E5%A4%B1%E5%8E%BB%E6%BF%80%E6%B4%BB%E4%BB%A5%E5%90%8E%E4%B8%8EDreamtonics%E7%9A%84%E4%B8%80%E4%BA%9B%E6%95%85%E4%BA%8B/2.png" srcset="/img/loading.gif" lazyload alt="收到的回复"><br>大意是他让我提供他们商店的订单号，他才能给我解决，不然哪儿买的找哪儿去。然而我是找人拼车在李迪克那儿买的，肯定没有这个订单号。我想坏了。<br>但是我转念一想，是不是我用中文才导致他觉得我是在其他地方买的。然后我就又写了一封英文邮件换了个邮箱发过去。<br><img src="/2023/11/15/%E5%A4%B1%E5%8E%BB%E6%BF%80%E6%B4%BB%E4%BB%A5%E5%90%8E%E4%B8%8EDreamtonics%E7%9A%84%E4%B8%80%E4%BA%9B%E6%95%85%E4%BA%8B/3.png" srcset="/img/loading.gif" lazyload alt="英文邮件内容"><br>结果回复的内容差不多，要求我提供订单编号。<br><img src="/2023/11/15/%E5%A4%B1%E5%8E%BB%E6%BF%80%E6%B4%BB%E4%BB%A5%E5%90%8E%E4%B8%8EDreamtonics%E7%9A%84%E4%B8%80%E4%BA%9B%E6%95%85%E4%BA%8B/4.png" srcset="/img/loading.gif" lazyload alt="英文邮件回复"><br>我直接说我忘了，想看看有没有啥办法。<br><img src="/2023/11/15/%E5%A4%B1%E5%8E%BB%E6%BF%80%E6%B4%BB%E4%BB%A5%E5%90%8E%E4%B8%8EDreamtonics%E7%9A%84%E4%B8%80%E4%BA%9B%E6%95%85%E4%BA%8B/5.png" srcset="/img/loading.gif" lazyload><br>结果他们说行。<br><img src="/2023/11/15/%E5%A4%B1%E5%8E%BB%E6%BF%80%E6%B4%BB%E4%BB%A5%E5%90%8E%E4%B8%8EDreamtonics%E7%9A%84%E4%B8%80%E4%BA%9B%E6%95%85%E4%BA%8B/6.png" srcset="/img/loading.gif" lazyload><br>然后我就把激活码发过去了，当我在等待不花钱解决这个问题时，Dreamtonics给我泼了盆冷水。<br><img src="/2023/11/15/%E5%A4%B1%E5%8E%BB%E6%BF%80%E6%B4%BB%E4%BB%A5%E5%90%8E%E4%B8%8EDreamtonics%E7%9A%84%E4%B8%80%E4%BA%9B%E6%95%85%E4%BA%8B/7.png" srcset="/img/loading.gif" lazyload><br>大致意思就是他们查了，我不是在他们官网买的，他们概不负责。<br>然后我就乖乖去给李迪克送钱了。</p>
+<h1 id="总结"><a href="#总结" class="headerlink" title="总结"></a>总结</h1><p>首先一定记得重装解激活。<br>第二少在李迪克那儿买软件。<br>第三拼车要慎重，至少找个搞丢激活码愿意出钱重置的人拼车。</p>
 
                 
               </div>
@@ -352,7 +359,7 @@
   
     <span>></span>
     
-  <a href="/categories/%E6%9D%82%E8%B0%88/%E6%8A%80%E6%9C%AF/" class="category-chain-item">技术</a>
+  <a href="/categories/%E6%9D%82%E8%B0%88/%E8%B0%83%E6%A0%A1/" class="category-chain-item">调校</a>
   
   
 
@@ -369,7 +376,13 @@
     <div class="post-meta">
       <i class="iconfont icon-tags"></i>
       
-        <a href="/tags/%E6%8A%80%E6%9C%AF/" class="print-no-link">#技术</a>
+        <a href="/tags/%E8%99%9A%E6%8B%9F%E6%AD%8C%E5%A7%AC/" class="print-no-link">#虚拟歌姬</a>
+      
+        <a href="/tags/%E6%AD%8C%E5%A3%B0%E5%90%88%E6%88%90%E5%BC%95%E6%93%8E/" class="print-no-link">#歌声合成引擎</a>
+      
+        <a href="/tags/Synthesizer-V/" class="print-no-link">#Synthesizer V</a>
+      
+        <a href="/tags/%E8%AD%A6%E7%A4%BA/" class="print-no-link">#警示</a>
       
     </div>
   
@@ -381,8 +394,8 @@
 
   <div class="license-box my-3">
     <div class="license-title">
-      <div>Hexo博客插入图片的实践</div>
-      <div>https://scientificw.github.io/2023/10/16/InsertPic/</div>
+      <div>失去激活以后与Dreamtonics的一些故事</div>
+      <div>https://scientificw.github.io/2023/11/15/失去激活以后与Dreamtonics的一些故事/</div>
     </div>
     <div class="license-meta">
       
@@ -394,7 +407,7 @@
       
         <div class="license-meta-item license-meta-date">
           <div>发布于</div>
-          <div>2023年10月16日</div>
+          <div>2023年11月15日</div>
         </div>
       
       
@@ -426,18 +439,12 @@
                   <article class="post-prev col-6">
                     
                     
-                      <a href="/2023/11/15/%E5%A4%B1%E5%8E%BB%E6%BF%80%E6%B4%BB%E4%BB%A5%E5%90%8E%E4%B8%8EDreamtonics%E7%9A%84%E4%B8%80%E4%BA%9B%E6%95%85%E4%BA%8B/" title="失去激活以后与Dreamtonics的一些故事">
-                        <i class="iconfont icon-arrowleft"></i>
-                        <span class="hidden-mobile">失去激活以后与Dreamtonics的一些故事</span>
-                        <span class="visible-mobile">上一篇</span>
-                      </a>
-                    
                   </article>
                   <article class="post-next col-6">
                     
                     
-                      <a href="/2023/10/16/SV1/" title="Synthesizer V系列教程 Vol.1">
-                        <span class="hidden-mobile">Synthesizer V系列教程 Vol.1</span>
+                      <a href="/2023/10/16/InsertPic/" title="Hexo博客插入图片的实践">
+                        <span class="hidden-mobile">Hexo博客插入图片的实践</span>
                         <span class="visible-mobile">下一篇</span>
                         <i class="iconfont icon-arrowright"></i>
                       </a>
