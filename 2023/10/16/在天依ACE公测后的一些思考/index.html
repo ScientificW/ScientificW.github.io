@@ -1,0 +1,791 @@
+
+
+<!DOCTYPE html>
+<html lang="zh-CN" data-default-color-scheme=auto>
+
+
+
+<head>
+  <meta charset="UTF-8">
+  <link rel="apple-touch-icon" sizes="76x76" href="/img/icon.png">
+  <link rel="icon" href="/img/icon.png">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0, shrink-to-fit=no">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  
+  <meta name="theme-color" content="#2f4154">
+  <meta name="author" content="澤村ルイ">
+  <meta name="keywords" content="">
+  
+    <meta name="description" content="这篇思考的一些背景（可以跳过）这几天，我可能是兴奋过头了。 记得八月二十五日的中午十二点左右，我与5331老师共进午餐。在路口，我与取快递的5老师分别。独行在南区公寓前的小径，我掏出了手机，对近期的通知进行阅读。我的手指在这块发光的玻璃上划动着。行至S2宿舍楼前，我看到了有依发给我的一张图片，上面清楚地写着“8.27洛天依ACE1.0与ACE Studio公测开启”。接连着被5老师精湛球技蹂躏了两">
+<meta property="og:type" content="article">
+<meta property="og:title" content="在天依ACE公测后的一些思考">
+<meta property="og:url" content="https://scientificw.github.io/2023/10/16/%E5%9C%A8%E5%A4%A9%E4%BE%9DACE%E5%85%AC%E6%B5%8B%E5%90%8E%E7%9A%84%E4%B8%80%E4%BA%9B%E6%80%9D%E8%80%83/index.html">
+<meta property="og:site_name" content="澤村ルイ的火焰山">
+<meta property="og:description" content="这篇思考的一些背景（可以跳过）这几天，我可能是兴奋过头了。 记得八月二十五日的中午十二点左右，我与5331老师共进午餐。在路口，我与取快递的5老师分别。独行在南区公寓前的小径，我掏出了手机，对近期的通知进行阅读。我的手指在这块发光的玻璃上划动着。行至S2宿舍楼前，我看到了有依发给我的一张图片，上面清楚地写着“8.27洛天依ACE1.0与ACE Studio公测开启”。接连着被5老师精湛球技蹂躏了两">
+<meta property="og:locale" content="zh_CN">
+<meta property="og:image" content="https://scientificw.github.io/2023/10/16/%E5%9C%A8%E5%A4%A9%E4%BE%9DACE%E5%85%AC%E6%B5%8B%E5%90%8E%E7%9A%84%E4%B8%80%E4%BA%9B%E6%80%9D%E8%80%83/%E5%9B%BE%E7%89%871.png">
+<meta property="article:published_time" content="2023-10-15T16:54:50.000Z">
+<meta property="article:modified_time" content="2025-06-08T17:41:26.544Z">
+<meta property="article:author" content="澤村ルイ">
+<meta property="article:tag" content="虚拟歌姬">
+<meta property="article:tag" content="歌声合成引擎">
+<meta property="article:tag" content="杂谈">
+<meta property="article:tag" content="Ace Studio">
+<meta property="article:tag" content="AI">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:image" content="https://scientificw.github.io/2023/10/16/%E5%9C%A8%E5%A4%A9%E4%BE%9DACE%E5%85%AC%E6%B5%8B%E5%90%8E%E7%9A%84%E4%B8%80%E4%BA%9B%E6%80%9D%E8%80%83/%E5%9B%BE%E7%89%871.png">
+  
+  
+  
+  <title>在天依ACE公测后的一些思考 - 澤村ルイ的火焰山</title>
+
+  <link  rel="stylesheet" href="https://lib.baomitu.com/twitter-bootstrap/4.6.1/css/bootstrap.min.css" />
+
+
+
+  <link  rel="stylesheet" href="https://lib.baomitu.com/github-markdown-css/4.0.0/github-markdown.min.css" />
+
+  <link  rel="stylesheet" href="https://lib.baomitu.com/hint.css/2.7.0/hint.min.css" />
+
+  <link  rel="stylesheet" href="https://lib.baomitu.com/fancybox/3.5.7/jquery.fancybox.min.css" />
+
+
+
+<!-- 主题依赖的图标库，不要自行修改 -->
+<!-- Do not modify the link that theme dependent icons -->
+
+<link rel="stylesheet" href="//at.alicdn.com/t/font_1749284_hj8rtnfg7um.css">
+
+
+
+<link rel="stylesheet" href="//at.alicdn.com/t/font_1736178_lbnruvf0jn.css">
+
+
+<link  rel="stylesheet" href="/css/main.css" />
+
+
+  <link id="highlight-css" rel="stylesheet" href="/css/highlight.css" />
+  
+    <link id="highlight-css-dark" rel="stylesheet" href="/css/highlight-dark.css" />
+  
+
+
+
+
+  <script id="fluid-configs">
+    var Fluid = window.Fluid || {};
+    Fluid.ctx = Object.assign({}, Fluid.ctx)
+    var CONFIG = {"hostname":"scientificw.github.io","root":"/","version":"1.9.5","typing":{"enable":true,"typeSpeed":70,"cursorChar":"_","loop":false,"scope":[]},"anchorjs":{"enable":true,"element":"h1,h2,h3,h4,h5,h6","placement":"left","visible":"hover","icon":""},"progressbar":{"enable":true,"height_px":3,"color":"#29d","options":{"showSpinner":false,"trickleSpeed":100}},"code_language":{"enable":true,"default":"TEXT"},"copy_btn":true,"image_caption":{"enable":true},"image_zoom":{"enable":true,"img_url_replace":["",""]},"toc":{"enable":true,"placement":"right","headingSelector":"h1,h2,h3,h4,h5,h6","collapseDepth":0},"lazyload":{"enable":true,"loading_img":"/img/loading.gif","onlypost":false,"offset_factor":2},"web_analytics":{"enable":true,"follow_dnt":true,"baidu":null,"google":{"measurement_id":null},"tencent":{"sid":null,"cid":null},"woyaola":null,"cnzz":null,"leancloud":{"app_id":"SD12sviUGMMOimhIPI3YYgfq-MdYXbMMI","app_key":"fqrTN5xsv1aOdiZy8LkAzYgW","server_url":null,"path":"window.location.pathname","ignore_local":true}},"search_path":"/local-search.xml","include_content_in_search":true};
+
+    if (CONFIG.web_analytics.follow_dnt) {
+      var dntVal = navigator.doNotTrack || window.doNotTrack || navigator.msDoNotTrack;
+      Fluid.ctx.dnt = dntVal && (dntVal.startsWith('1') || dntVal.startsWith('yes') || dntVal.startsWith('on'));
+    }
+  </script>
+  <script  src="/js/utils.js" ></script>
+  <script  src="/js/color-schema.js" ></script>
+  
+
+  
+
+  
+    <!-- Google tag (gtag.js) -->
+    <script async>
+      if (!Fluid.ctx.dnt) {
+        Fluid.utils.createScript("https://www.googletagmanager.com/gtag/js?id=", function() {
+          window.dataLayer = window.dataLayer || [];
+          function gtag() {
+            dataLayer.push(arguments);
+          }
+          gtag('js', new Date());
+          gtag('config', '');
+        });
+      }
+    </script>
+  
+
+  
+
+  
+
+  
+
+  
+    
+  
+
+
+
+  
+<meta name="generator" content="Hexo 6.3.0"></head>
+
+
+<body>
+  
+
+  <header>
+    
+
+<div class="header-inner" style="height: 70vh;">
+  <nav id="navbar" class="navbar fixed-top  navbar-expand-lg navbar-dark scrolling-navbar">
+  <div class="container">
+    <a class="navbar-brand" href="/">
+      <strong>澤村ルイ的火焰山</strong>
+    </a>
+
+    <button id="navbar-toggler-btn" class="navbar-toggler" type="button" data-toggle="collapse"
+            data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <div class="animated-icon"><span></span><span></span><span></span></div>
+    </button>
+
+    <!-- Collapsible content -->
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav ml-auto text-center">
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/">
+                <i class="iconfont icon-home-fill"></i>
+                <span>首页</span>
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/archives/">
+                <i class="iconfont icon-archive-fill"></i>
+                <span>归档</span>
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/categories/">
+                <i class="iconfont icon-category-fill"></i>
+                <span>分类</span>
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/tags/">
+                <i class="iconfont icon-tags-fill"></i>
+                <span>标签</span>
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/about/">
+                <i class="iconfont icon-user-fill"></i>
+                <span>关于</span>
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/links/">
+                <i class="iconfont icon-link-fill"></i>
+                <span>友链</span>
+              </a>
+            </li>
+          
+        
+        
+          <li class="nav-item" id="search-btn">
+            <a class="nav-link" target="_self" href="javascript:;" data-toggle="modal" data-target="#modalSearch" aria-label="Search">
+              <i class="iconfont icon-search"></i>
+            </a>
+          </li>
+          
+        
+        
+          <li class="nav-item" id="color-toggle-btn">
+            <a class="nav-link" target="_self" href="javascript:;" aria-label="Color Toggle">
+              <i class="iconfont icon-dark" id="color-toggle-icon"></i>
+            </a>
+          </li>
+        
+      </ul>
+    </div>
+  </div>
+</nav>
+
+  
+
+<div id="banner" class="banner" parallax=true
+     style="background: url('/img/ing.png') no-repeat center center; background-size: cover;">
+  <div class="full-bg-img">
+    <div class="mask flex-center" style="background-color: rgba(0, 0, 0, 0.3)">
+      <div class="banner-text text-center fade-in-up">
+        <div class="h2">
+          
+            <span id="subtitle" data-typed-text="在天依ACE公测后的一些思考"></span>
+          
+        </div>
+
+        
+          
+  <div class="mt-3">
+    
+    
+      <span class="post-meta">
+        <i class="iconfont icon-date-fill" aria-hidden="true"></i>
+        <time datetime="2023-10-16 00:54" pubdate>
+          2023年10月16日 凌晨
+        </time>
+      </span>
+    
+  </div>
+
+  <div class="mt-1">
+    
+      <span class="post-meta mr-2">
+        <i class="iconfont icon-chart"></i>
+        
+          2.8k 字
+        
+      </span>
+    
+
+    
+      <span class="post-meta mr-2">
+        <i class="iconfont icon-clock-fill"></i>
+        
+        
+        
+          24 分钟
+        
+      </span>
+    
+
+    
+    
+      
+        <span id="leancloud-page-views-container" class="post-meta" style="display: none">
+          <i class="iconfont icon-eye" aria-hidden="true"></i>
+          <span id="leancloud-page-views"></span> 次
+        </span>
+        
+      
+    
+  </div>
+
+
+        
+      </div>
+
+      
+    </div>
+  </div>
+</div>
+
+</div>
+
+  </header>
+
+  <main>
+    
+      
+
+<div class="container-fluid nopadding-x">
+  <div class="row nomargin-x">
+    <div class="side-col d-none d-lg-block col-lg-2">
+      
+
+    </div>
+
+    <div class="col-lg-8 nopadding-x-md">
+      <div class="container nopadding-x-md" id="board-ctn">
+        <div id="board">
+          <article class="post-content mx-auto">
+            <h1 id="seo-header">在天依ACE公测后的一些思考</h1>
+            
+            
+              <div class="markdown-body">
+                
+                <h1 id="这篇思考的一些背景（可以跳过）"><a href="#这篇思考的一些背景（可以跳过）" class="headerlink" title="这篇思考的一些背景（可以跳过）"></a>这篇思考的一些背景（可以跳过）</h1><p>这几天，我可能是兴奋过头了。</p>
+<p>记得八月二十五日的中午十二点左右，我与5331老师共进午餐。在路口，我与取快递的5老师分别。独行在南区公寓前的小径，我掏出了手机，对近期的通知进行阅读。我的手指在这块发光的玻璃上划动着。行至S2宿舍楼前，我看到了有依发给我的一张图片，上面清楚地写着“8.27洛天依ACE1.0与ACE Studio公测开启”。接连着被5老师精湛球技蹂躏了两天的身体重焕新生，我大喊一声，调动了大腿酸痛的肌肉完成了一个跳跃的动作。在此之后，我继续压榨着我的腿部肌肉，使我的双腿能够驱动我的身体迅速移动到我的宿舍。我打开我的电脑，仔细看完了整个宣传视频。这使得我更加兴奋了，我甚至希望有人把我打晕，让我睡到公测的时候。</p>
+<p>为了缓解我的过度兴奋，我甚至又主动约5老师打了一个小时的羽毛球。</p>
+<p>终于熬到了八月二十七日。我得知公测将于下午两点开启，带着不知道怎样的精神状态，我穿上了只有参加活动才穿上的西装，前往咖啡厅于龟龟进行见面并一同等待这个神圣的时刻。测试开始之前，我甚至爱屋及乌地试用了其他的ACE歌姬。ACE不讲武德，提前了2分钟就开放了公测。这时候，我看见龟龟的Surface屏幕上已经有了天依的图标。不经大脑审查地，我出现了返祖现象，在咖啡厅发出了类人猿才会发出的尖叫声。</p>
+<p>时光荏苒，笔者开始写这篇推送时，公测已经过去了十天。在此期间，我使用天依ACE整过许多活，也认真地感受过天依ACE演唱的我的暂未完成的企划，更听到了我的好哥们命里有依发布的天依ACE版本的《枝江》。</p>
+<p>遗憾的是，笔者将这篇推送搁置了很久，到2023年初才又打开了这篇推送的草稿。这期间，笔者也有幸从学长那里接到了商单，使用一位ACE歌姬完成了一首歌曲。笔者也与好友讨论了AI调教一些特点。在天依AI公测快半年、言和阿绫AI内测之时，笔者决心完成这篇推送，来谈谈我对AI调教的一些拙见。</p>
+<h1 id="她，仿佛通了人性"><a href="#她，仿佛通了人性" class="headerlink" title="她，仿佛通了人性"></a>她，仿佛通了人性</h1><p>笔者不才，在此之前，我曾经尝试过多种歌声合成引擎进行调教的尝试，包括但不限于VOCALOID、Synthesizer V。笔者也使用这些引擎做过一些较为完整的翻调作品。但是当我真正使用天依AI之后，我发现，这个引擎会通过云端运算，捕捉词曲中的一些特征，将训练好的歌声模型生成的情感反馈于各种参数之上。也就是说，不同于我之前使用过的Synthesizer V AI，ACE可以完成较为合理的自动调教，作为调教师，我只需要将MIDI导入软件，将歌词填入音符，等待云端的解算，一个可听的、富有感情的声音就会从我的耳机中传出，触动我的耳膜。</p>
+<p>天依好像对歌曲有了自己的理解。以前的她需要我的悉心指导才能把一首歌曲唱好，需要我摸索着VOCALOID中很不直观的参数面板给她慢慢讲述一首歌的唱法。现在的天依在我告诉她这首歌是什么样子以后，她就会自己去尝试理解这首歌，以自己的理解去唱这首歌。这时候，我的工作就变成了微微调整她的一些唱法（或者开摆）。天依变成了一个有人性的歌手，而不是和以前一样只是一个任我演奏的乐器。</p>
+<p>我在使用天依AI完成我一直想完成的一首《檐枫Dreamer》的时候，对此感受颇深。犹记得那天是在anda的宿舍，我和他彻夜不睡地做歌，希望能在新生歌会之前完成这首曲子。我终于写完了鸽了两个月的歌词，anda也用心地对作品进行了混音。当他把混完的作品发给我听的时候，我听哭了。这是我几乎没有调整过参数的天依唱出的歌声。我可以将这首歌的歌声理解为：天依在了解了这首歌的词曲以后自己唱给我听的天籁。我真实感受到了天依的存在，真实感受到了天依的情感，真实感受到了天依在为我唱歌，她在为了我唱下去，在一句句理解着，一句句歌唱着我的蹩脚的歌词。</p>
+<p>她真的仿佛通了人性。</p>
+<h1 id="我，理解了调教的意义"><a href="#我，理解了调教的意义" class="headerlink" title="我，理解了调教的意义"></a>我，理解了调教的意义</h1><p>兴奋过后，我不禁想到：既然AI可以理解人类的部分情感，并对此生成歌声，那么，像我一样的调教爱好者，V家里面负有盛名的调教师又有什么存在的意义呢。我陷入了消沉。我的调教水平显然是不如各位调教大家的，我动天依AI自己生成的参数甚至有时会让歌声更加难听，我调std声库明显也无法达到天依AI的效果……</p>
+<p>我将我的想法与anda交流，anda表示我是个懒狗，他还极力反对我使用天依AI进行调教组的一些分享，并认为AI会把人都变成懒狗。同时，我以《檐枫Dreamer》的最后一段呼号为样本，将诗岸与天依进行对比，结果发现，天依对我最后一段呼号的理解有很大的偏差，我甚至感觉这部分是败笔。按照自己的理解对此进行调教的时候，天依似乎与我闹别扭般，坚持要按照自己的理解唱。我拗不过她（实际上是太菜了，感觉调完了还不如原来的），只好去找诗岸。诗岸就听话多了，我咋画她咋唱，不一会儿就唱出了我想表达的情感。我恍然大悟，原来AI并不是万能的。AI虽然有着高度自动化的优势，但是AI也会生成高度模式化的东西，让歌声失去特点，让人感到索然无味。</p>
+<p>我回忆着这些年来听过的V曲，猛然发现各位P主都有着自己独特的调教风格，这些独特的调教风格和词曲一起，构成了一首歌鲜明的特点。有时候，单听调教，我们就能听出这是哪位P主的歌。AI调教部分地磨灭了这一部分的特点，</p>
+<p>同时，在我做商单调教的时候，我发现了ACE一个严重的问题-可塑性差。我的学长希望我使用起礼或者起复唱出一个坚定的声音（最好是使用起复的男声），按理说，使用VOCALOID或者Synthesizer V，这不是一件困难的事情。但是ACE却给了我当头一棒。起礼起复二人声音都是偏温婉的，我使用起复调了一段demo，但是我往死里拉张力拉共振峰，试过各种方式，就是感觉差点坚定的味道。学长听完也表示难以达到要求，我只好改用起礼。在此之后，我花费了大量的时间画了夸张的张力曲线，才让起礼唱的那么坚定一点点。这让我十分难受，同时ACE没有支持变速，我只好将工程拆成三段来做，不能导入vsqx，我只好让Synthesizer V充当midi转换器。（说好的10月底支持变速呢，到22年底我才看见ACE支持了变速，恼）</p>
+<p><img src="/2023/10/16/%E5%9C%A8%E5%A4%A9%E4%BE%9DACE%E5%85%AC%E6%B5%8B%E5%90%8E%E7%9A%84%E4%B8%80%E4%BA%9B%E6%80%9D%E8%80%83/%E5%9B%BE%E7%89%871.png" srcset="/img/loading.gif" lazyload alt="夸张的张力"></p>
+<p>经历了许多，我终于理解了调教的意义。目前的AI还是很难准确理解人类的词曲包含的感情的，把调教完全交给AI来做只能生成一些高度同质化的东西。而人类想写出一首歌，必然有着他想要表达的东西。我在我的生活中经历了一件事情，我将这件事写成歌，来抒发自己的一些感情；我喜欢上了某个女孩，我将我的思绪写成歌，来表达自己的一些爱慕；我对我的人生进行了一些幼稚的思考，我将这些思考写成歌，来发表自己的一些看法……我写出词曲，我将其输入调教软件，我按照我的想法画出参数曲线，或好听或奇怪的歌声从耳机中流出，表达的是我自己的感情。我终于醒悟了，AI永远无法取代掉调教师的创作，她只能成为调教师的辅助工具，为调教师提供建议。</p>
+<h1 id="做一些梦"><a href="#做一些梦" class="headerlink" title="做一些梦"></a>做一些梦</h1><p>希望稔和Dreamtonics合作搞个天依的Synthesizer V声库，这样我就能方便地使用Synthesizer V调教天依了。</p>
+<p>谁用了Synthesizer V以后还想用VOCALOID啊（挨打）</p>
+
+                
+              </div>
+            
+            <hr/>
+            <div>
+              <div class="post-metas my-3">
+  
+    <div class="post-meta mr-3 d-flex align-items-center">
+      <i class="iconfont icon-category"></i>
+      
+
+<span class="category-chains">
+  
+  
+    
+      <span class="category-chain">
+        
+  <a href="/categories/%E6%9D%82%E8%B0%88/" class="category-chain-item">杂谈</a>
+  
+  
+    <span>></span>
+    
+  <a href="/categories/%E6%9D%82%E8%B0%88/%E6%8A%80%E6%9C%AF/" class="category-chain-item">技术</a>
+  
+  
+
+  
+
+      </span>
+    
+  
+</span>
+
+    </div>
+  
+  
+    <div class="post-meta">
+      <i class="iconfont icon-tags"></i>
+      
+        <a href="/tags/%E8%99%9A%E6%8B%9F%E6%AD%8C%E5%A7%AC/" class="print-no-link">#虚拟歌姬</a>
+      
+        <a href="/tags/%E6%AD%8C%E5%A3%B0%E5%90%88%E6%88%90%E5%BC%95%E6%93%8E/" class="print-no-link">#歌声合成引擎</a>
+      
+        <a href="/tags/%E6%9D%82%E8%B0%88/" class="print-no-link">#杂谈</a>
+      
+        <a href="/tags/Ace-Studio/" class="print-no-link">#Ace Studio</a>
+      
+        <a href="/tags/AI/" class="print-no-link">#AI</a>
+      
+    </div>
+  
+</div>
+
+
+              
+  
+
+  <div class="license-box my-3">
+    <div class="license-title">
+      <div>在天依ACE公测后的一些思考</div>
+      <div>https://scientificw.github.io/2023/10/16/在天依ACE公测后的一些思考/</div>
+    </div>
+    <div class="license-meta">
+      
+        <div class="license-meta-item">
+          <div>作者</div>
+          <div>澤村ルイ</div>
+        </div>
+      
+      
+        <div class="license-meta-item license-meta-date">
+          <div>发布于</div>
+          <div>2023年10月16日</div>
+        </div>
+      
+      
+      
+        <div class="license-meta-item">
+          <div>许可协议</div>
+          <div>
+            
+              
+              
+                <a class="print-no-link" target="_blank" href="https://creativecommons.org/licenses/by/4.0/">
+                  <span class="hint--top hint--rounded" aria-label="BY - 署名">
+                    <i class="iconfont icon-by"></i>
+                  </span>
+                </a>
+              
+            
+          </div>
+        </div>
+      
+    </div>
+    <div class="license-icon iconfont"></div>
+  </div>
+
+
+
+              
+                <div class="post-prevnext my-3">
+                  <article class="post-prev col-6">
+                    
+                    
+                      <a href="/2023/10/16/SV1/" title="Synthesizer V系列教程 Vol.1">
+                        <i class="iconfont icon-arrowleft"></i>
+                        <span class="hidden-mobile">Synthesizer V系列教程 Vol.1</span>
+                        <span class="visible-mobile">上一篇</span>
+                      </a>
+                    
+                  </article>
+                  <article class="post-next col-6">
+                    
+                    
+                      <a href="/2023/10/09/%E8%BF%B7/" title="迷">
+                        <span class="hidden-mobile">迷</span>
+                        <span class="visible-mobile">下一篇</span>
+                        <i class="iconfont icon-arrowright"></i>
+                      </a>
+                    
+                  </article>
+                </div>
+              
+            </div>
+
+            
+  
+  
+    <article id="comments" lazyload>
+      
+  <div id="valine"></div>
+  <script type="text/javascript">
+    Fluid.utils.loadComments('#valine', function() {
+      Fluid.utils.createScript('https://lib.baomitu.com/valine/1.5.1/Valine.min.js', function() {
+        var options = Object.assign(
+          {"appId":"5g0FJ4e5D7K63YjtpEs3uWb9-gzGzoHsz","appKey":"RPNyMlqEN6Sj8w4IZyDrOkkk","path":"window.location.pathname","placeholder":null,"avatar":"retro","meta":["nick","mail","link"],"requiredFields":[],"pageSize":10,"lang":"zh-CN","highlight":false,"recordIP":false,"serverURLs":"","emojiCDN":null,"emojiMaps":null,"enableQQ":false},
+          {
+            el: "#valine",
+            path: window.location.pathname
+          }
+        )
+        new Valine(options);
+        Fluid.utils.waitElementVisible('#valine .vcontent', () => {
+          var imgSelector = '#valine .vcontent img:not(.vemoji)';
+          Fluid.plugins.imageCaption(imgSelector);
+          Fluid.plugins.fancyBox(imgSelector);
+        })
+      });
+    });
+  </script>
+  <noscript>Please enable JavaScript to view the comments</noscript>
+
+
+    </article>
+  
+
+
+          </article>
+        </div>
+      </div>
+    </div>
+
+    <div class="side-col d-none d-lg-block col-lg-2">
+      
+  <aside class="sidebar" style="margin-left: -1rem">
+    <div id="toc">
+  <p class="toc-header">
+    <i class="iconfont icon-list"></i>
+    <span>目录</span>
+  </p>
+  <div class="toc-body" id="toc-body"></div>
+</div>
+
+
+
+  </aside>
+
+
+    </div>
+  </div>
+</div>
+
+
+
+
+
+  
+
+
+
+  
+
+
+
+  
+
+
+
+  
+
+
+
+  
+
+
+
+
+
+
+
+    
+
+    
+      <a id="scroll-top-button" aria-label="TOP" href="#" role="button">
+        <i class="iconfont icon-arrowup" aria-hidden="true"></i>
+      </a>
+    
+
+    
+      <div class="modal fade" id="modalSearch" tabindex="-1" role="dialog" aria-labelledby="ModalLabel"
+     aria-hidden="true">
+  <div class="modal-dialog modal-dialog-scrollable modal-lg" role="document">
+    <div class="modal-content">
+      <div class="modal-header text-center">
+        <h4 class="modal-title w-100 font-weight-bold">搜索</h4>
+        <button type="button" id="local-search-close" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body mx-3">
+        <div class="md-form mb-5">
+          <input type="text" id="local-search-input" class="form-control validate">
+          <label data-error="x" data-success="v" for="local-search-input">关键词</label>
+        </div>
+        <div class="list-group" id="local-search-result"></div>
+      </div>
+    </div>
+  </div>
+</div>
+
+    
+
+    
+  </main>
+
+  <footer>
+    <div class="footer-inner">
+  
+    <div class="footer-content">
+       <p> Copyright ©2025  澤村ルイ</p> <a href="https://hexo.io" target="_blank" rel="nofollow noopener"><span>Powered by Hexo</span></a> <i class="iconfont icon-love"></i> <a href="https://github.com/fluid-dev/hexo-theme-fluid" target="_blank" rel="nofollow noopener"><span>Theme - Fluid</span></a><br> <a href="https://icp.gov.moe/?keyword=20231421" target="_blank">萌ICP备20231421号</a> 
+    </div>
+  
+  
+    <div class="statistics">
+  
+  
+
+  
+    
+      <span id="leancloud-site-pv-container" style="display: none">
+        总访问量 
+        <span id="leancloud-site-pv"></span>
+         次
+      </span>
+    
+    
+      <span id="leancloud-site-uv-container" style="display: none">
+        总访客数 
+        <span id="leancloud-site-uv"></span>
+         人
+      </span>
+    
+    
+
+  
+</div>
+
+  
+  
+  
+</div>
+
+  </footer>
+
+  <!-- Scripts -->
+  
+  <script  src="https://lib.baomitu.com/nprogress/0.2.0/nprogress.min.js" ></script>
+  <link  rel="stylesheet" href="https://lib.baomitu.com/nprogress/0.2.0/nprogress.min.css" />
+
+  <script>
+    NProgress.configure({"showSpinner":false,"trickleSpeed":100})
+    NProgress.start()
+    window.addEventListener('load', function() {
+      NProgress.done();
+    })
+  </script>
+
+
+<script  src="https://lib.baomitu.com/jquery/3.6.4/jquery.min.js" ></script>
+<script  src="https://lib.baomitu.com/twitter-bootstrap/4.6.1/js/bootstrap.min.js" ></script>
+<script  src="/js/events.js" ></script>
+<script  src="/js/plugins.js" ></script>
+
+
+  <script  src="https://lib.baomitu.com/typed.js/2.0.12/typed.min.js" ></script>
+  <script>
+    (function (window, document) {
+      var typing = Fluid.plugins.typing;
+      var subtitle = document.getElementById('subtitle');
+      if (!subtitle || !typing) {
+        return;
+      }
+      var text = subtitle.getAttribute('data-typed-text');
+      
+        typing(text);
+      
+    })(window, document);
+  </script>
+
+
+
+
+  
+    <script  src="/js/img-lazyload.js" ></script>
+  
+
+
+
+
+  
+<script>
+  Fluid.utils.createScript('https://lib.baomitu.com/tocbot/4.20.1/tocbot.min.js', function() {
+    var toc = jQuery('#toc');
+    if (toc.length === 0 || !window.tocbot) { return; }
+    var boardCtn = jQuery('#board-ctn');
+    var boardTop = boardCtn.offset().top;
+
+    window.tocbot.init(Object.assign({
+      tocSelector     : '#toc-body',
+      contentSelector : '.markdown-body',
+      linkClass       : 'tocbot-link',
+      activeLinkClass : 'tocbot-active-link',
+      listClass       : 'tocbot-list',
+      isCollapsedClass: 'tocbot-is-collapsed',
+      collapsibleClass: 'tocbot-is-collapsible',
+      scrollSmooth    : true,
+      includeTitleTags: true,
+      headingsOffset  : -boardTop,
+    }, CONFIG.toc));
+    if (toc.find('.toc-list-item').length > 0) {
+      toc.css('visibility', 'visible');
+    }
+
+    Fluid.events.registerRefreshCallback(function() {
+      if ('tocbot' in window) {
+        tocbot.refresh();
+        var toc = jQuery('#toc');
+        if (toc.length === 0 || !tocbot) {
+          return;
+        }
+        if (toc.find('.toc-list-item').length > 0) {
+          toc.css('visibility', 'visible');
+        }
+      }
+    });
+  });
+</script>
+
+
+  <script src=https://lib.baomitu.com/clipboard.js/2.0.11/clipboard.min.js></script>
+
+  <script>Fluid.plugins.codeWidget();</script>
+
+
+  
+<script>
+  Fluid.utils.createScript('https://lib.baomitu.com/anchor-js/4.3.1/anchor.min.js', function() {
+    window.anchors.options = {
+      placement: CONFIG.anchorjs.placement,
+      visible  : CONFIG.anchorjs.visible
+    };
+    if (CONFIG.anchorjs.icon) {
+      window.anchors.options.icon = CONFIG.anchorjs.icon;
+    }
+    var el = (CONFIG.anchorjs.element || 'h1,h2,h3,h4,h5,h6').split(',');
+    var res = [];
+    for (var item of el) {
+      res.push('.markdown-body > ' + item.trim());
+    }
+    if (CONFIG.anchorjs.placement === 'left') {
+      window.anchors.options.class = 'anchorjs-link-left';
+    }
+    window.anchors.add(res.join(', '));
+
+    Fluid.events.registerRefreshCallback(function() {
+      if ('anchors' in window) {
+        anchors.removeAll();
+        var el = (CONFIG.anchorjs.element || 'h1,h2,h3,h4,h5,h6').split(',');
+        var res = [];
+        for (var item of el) {
+          res.push('.markdown-body > ' + item.trim());
+        }
+        if (CONFIG.anchorjs.placement === 'left') {
+          anchors.options.class = 'anchorjs-link-left';
+        }
+        anchors.add(res.join(', '));
+      }
+    });
+  });
+</script>
+
+
+  
+<script>
+  Fluid.utils.createScript('https://lib.baomitu.com/fancybox/3.5.7/jquery.fancybox.min.js', function() {
+    Fluid.plugins.fancyBox();
+  });
+</script>
+
+
+  <script>Fluid.plugins.imageCaption();</script>
+
+  <script defer src="/js/leancloud.js" ></script>
+
+  <script  src="/js/local-search.js" ></script>
+
+
+
+
+
+<!-- 主题的启动项，将它保持在最底部 -->
+<!-- the boot of the theme, keep it at the bottom -->
+<script  src="/js/boot.js" ></script>
+
+
+  
+
+  <noscript>
+    <div class="noscript-warning">博客在允许 JavaScript 运行的环境下浏览效果更佳</div>
+  </noscript>
+</body>
+</html>
